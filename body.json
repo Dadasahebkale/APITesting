@@ -1,0 +1,10 @@
+{
+    "name": "Scott",
+    "location": "England",
+    "phone": "9876543212",
+    "courses": [
+      "API",
+      "JMeter"
+    ]
+  
+  }

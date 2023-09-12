@@ -22,7 +22,7 @@ import org.testng.annotations.Test;
  */
 public class DifferentWaysResponseBody {
 	int id;
-	@Test
+	@Test(priority = 1)
 	public void addStudent() {
 		
 		HashMap<String,Object> hm=new HashMap<String, Object>();
@@ -33,14 +33,15 @@ public class DifferentWaysResponseBody {
 		String courseArr[]= {"API","JMeter"};
 		hm.put("cources", courseArr);
 		
-		given()
+		id=given()
 				.contentType("application/json")
 				.body(hm)
 		
 		.when()
 			.post("http://localhost:3000/students")
-			//.jsonPath().getInt("id");
-		//given().when()
+		
+			.jsonPath().getInt("id");
+		given().when()
 		.then()
 			.statusCode(201)
 			.body("name", equalTo("Oviya"))
@@ -50,7 +51,7 @@ public class DifferentWaysResponseBody {
 			.body("cources[1]",equalTo("JMeter"))
 			.header("Content-Type", "application/json; charset=utf-8")
 			.log().all();
-			
+		
 			
 	}
 	//@Test(priority=2)
@@ -58,8 +59,10 @@ public class DifferentWaysResponseBody {
 		given()
 		
 		.when()
-			.get("http://localhost:3000/students")
-			.jsonPath().getInt("id");
+			.get("http://localhost:3000/students/"+id)
+			//.jsonPath().getInt("id");
+		.then().statusCode(200)
+		.log().all();
 		
 	}
 	@Test(priority = 3)
@@ -68,9 +71,9 @@ public class DifferentWaysResponseBody {
 		given()
 		
 		.when()
-		.delete("http://localhost:3000/students/36")
+		.delete("http://localhost:3000/students/"+id)
 		.then()
-			.statusCode(204);
+			.statusCode(200);
 			//.log().all();
 	}
 }
