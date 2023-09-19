@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="com.day5.ParshingXMLResponseData"/>
+      <class name="com.day3.LogDemo"/>
+      <class name="com.day2.ExternalJSONFileApproach"/>
+      <class name="com.day3.HeadersValidation"/>
+      <class name="com.day7.GenerateDummyData"/>
+      <class name="com.day1.HttpRequestStudent"/>
+      <class name="com.day3.AllCookieInfo"/>
+      <class name="com.day7.TestBasicAuthentication"/>
+      <class name="com.day3.CaptureSingleHeader"/>
+      <class name="com.day1.HttpRequests"/>
+      <class name="retryLogic.test.MyTest"/>
+      <class name="com.day3.CookiesDemo"/>
+      <class name="com.day4.ParsingResponseData"/>
+      <class name="com.day3.CaptureSingleCookieDetails"/>
+      <class name="com.day3.PathAndQueryParam"/>
+      <class name="com.day6.SerilizationDeserilization"/>
+      <class name="com.day2.PojoAutomationTester"/>
+      <class name="com.day2.POJOApproach"/>
+      <class name="com.day2.AutomationTester"/>
+      <class name="com.day2.PostUsingJsonLib"/>
+      <class name="com.day2.DifferentWaysResponseBody"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

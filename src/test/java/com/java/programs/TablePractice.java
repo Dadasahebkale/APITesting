@@ -5,7 +5,7 @@ public class TablePractice {
 	public static void main(String[] args) {
 
 		int a=2;
-		int b=20;
+		int b=100;
 		for(int i=a;i<=b;i++) {
 			System.out.println("Multiplication of "+i);
 			for(int j=1;j<=10;j++) {

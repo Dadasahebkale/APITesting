@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="RetyFailedTestSuite" verbose="1">
+	
+<listeners>
+	<listener class-name="retryLogic.Analyzer.RetryAnalyzer"/>
+	</listeners>
+  <test name="RetryMultipleFailedTestCases">
+
+    <classes>
+      <class name="retryLogic.test.MyTest"/>
+	</classes>
+	</test>
+</suite>
