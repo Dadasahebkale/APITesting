@@ -15,7 +15,7 @@ public class CreateUser {
 
 	@Test
 	public void createUserTest(ITestContext context) {
-		
+		// this local repo added to github repo
 		Faker faker=new Faker();
 		JSONObject data=new JSONObject();
 		data.put("name", faker.name().fullName());
