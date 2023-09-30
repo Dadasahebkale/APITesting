@@ -7,7 +7,7 @@ public class EvenOddArray {
 
 	public static void main(String[] args) {
 
-		int []MyArray= {1,2,4,6,7,8,9,22,3,77};
+		int []MyArray= {1,2,4,6,7,8,9,22,3,77,323,222};
 		ArrayList<Integer> evenList=new ArrayList<Integer>();
 		ArrayList<Integer> oddList=new ArrayList<Integer>();
 		for(int i=0;i<MyArray.length;i++) {

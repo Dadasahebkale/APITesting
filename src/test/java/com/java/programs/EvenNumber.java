@@ -2,13 +2,13 @@ package com.java.programs;
 
 public class EvenNumber {
 	
-//	public static void main(String[] args) {
+public static void main(String[] args) {
+		
+		sumOfEvenNumber();
+		//PrintEvenNumber();
+		TotalSumNumber();
 //		
-//		sumOfEvenNumber();
-//		PrintEvenNumber();
-//		TotalSumNumber();
-//		
-//	}
+	}
 
 	public static void sumOfEvenNumber() {
 		int sum = 0;
