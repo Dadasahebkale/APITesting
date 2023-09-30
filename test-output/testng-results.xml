@@ -1,69 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-09-19T05:57:31 IST" name="Suite" finished-at="2023-09-19T05:57:37 IST" duration-ms="6579">
+  <suite started-at="2023-10-01T02:41:34 IST" name="Default suite" finished-at="2023-10-01T02:41:36 IST" duration-ms="1497">
     <groups>
     </groups>
-    <test started-at="2023-09-19T05:57:31 IST" name="Test1" finished-at="2023-09-19T05:57:34 IST" duration-ms="3124">
-      <class name="com.day8.CreateUser">
-        <test-method signature="createUserTest(org.testng.ITestContext)[pri:0, instance:com.day8.CreateUser@57a3af25]" started-at="2023-09-19T05:57:31 IST" name="createUserTest" finished-at="2023-09-19T05:57:34 IST" duration-ms="3088" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@548e6d58]]>
-              </value>
-            </param>
-          </params>
+    <test started-at="2023-10-01T02:41:34 IST" name="Default test" finished-at="2023-10-01T02:41:36 IST" duration-ms="1497">
+      <class name="com.pojo.OauthTest">
+        <test-method signature="getCourse()[pri:1, instance:com.pojo.OauthTest@477b4cdf]" started-at="2023-10-01T02:41:34 IST" name="getCourse" finished-at="2023-10-01T02:41:36 IST" duration-ms="1193" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createUserTest -->
-      </class> <!-- com.day8.CreateUser -->
-    </test> <!-- Test1 -->
-    <test started-at="2023-09-19T05:57:34 IST" name="Test2" finished-at="2023-09-19T05:57:35 IST" duration-ms="990">
-      <class name="com.day8.GetUser">
-        <test-method signature="getUserDetails(org.testng.ITestContext)[pri:0, instance:com.day8.GetUser@443118b0]" started-at="2023-09-19T05:57:34 IST" name="getUserDetails" finished-at="2023-09-19T05:57:35 IST" duration-ms="982" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@9d3a7a1]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- getCourse -->
+        <test-method signature="course()[pri:2, instance:com.pojo.OauthTest@477b4cdf]" started-at="2023-10-01T02:41:36 IST" name="course" finished-at="2023-10-01T02:41:36 IST" duration-ms="252" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getUserDetails -->
-      </class> <!-- com.day8.GetUser -->
-    </test> <!-- Test2 -->
-    <test started-at="2023-09-19T05:57:35 IST" name="Test3" finished-at="2023-09-19T05:57:36 IST" duration-ms="1430">
-      <class name="com.day8.UpdateUser">
-        <test-method signature="upDateUser(org.testng.ITestContext)[pri:0, instance:com.day8.UpdateUser@6771beb3]" started-at="2023-09-19T05:57:35 IST" name="upDateUser" finished-at="2023-09-19T05:57:36 IST" duration-ms="1428" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@3dad535f]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- upDateUser -->
-      </class> <!-- com.day8.UpdateUser -->
-    </test> <!-- Test3 -->
-    <test started-at="2023-09-19T05:57:36 IST" name="Test4" finished-at="2023-09-19T05:57:37 IST" duration-ms="950">
-      <class name="com.day8.DeleteUser">
-        <test-method signature="deletUser(org.testng.ITestContext)[pri:0, instance:com.day8.DeleteUser@13c9d689]" started-at="2023-09-19T05:57:36 IST" name="deletUser" finished-at="2023-09-19T05:57:37 IST" duration-ms="947" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@6344004d]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- deletUser -->
-      </class> <!-- com.day8.DeleteUser -->
-    </test> <!-- Test4 -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- course -->
+      </class> <!-- com.pojo.OauthTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

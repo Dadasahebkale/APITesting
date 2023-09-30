@@ -3,12 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="retryLogic.test.MyTest">
+      <class name="com.pojo.OauthTest">
         <methods>
-          <include name="test2"/>
-          <include name="test1"/>
+          <include name="course"/>
         </methods>
-      </class> <!-- retryLogic.test.MyTest -->
+      </class> <!-- com.pojo.OauthTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

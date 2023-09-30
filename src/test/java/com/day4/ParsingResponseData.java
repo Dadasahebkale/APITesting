@@ -5,6 +5,7 @@ import static io.restassured.matcher.RestAssuredMatchers.*;
 import static org.hamcrest.Matcher.*;
 import static org.hamcrest.Matchers.equalTo;
 
+import org.json.JSONException;
 import org.json.JSONObject;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -27,7 +28,7 @@ public class ParsingResponseData {
 			
 	}
 	@Test(priority = 1)
-	public void ParsingResonseSearchBookTitle() {
+	public void ParsingResonseSearchBookTitle() throws JSONException {
 
 		Response res = given().contentType(ContentType.JSON).when().get("http://localhost:3000/store");
 

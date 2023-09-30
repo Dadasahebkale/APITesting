@@ -10,6 +10,7 @@ import static io.restassured.matcher.RestAssuredMatchers.*;
 import static org.hamcrest.Matcher.*;
 import static org.hamcrest.Matchers.equalTo;
 
+import org.json.JSONException;
 import org.json.JSONObject;
 public class UpdateUser {
 
@@ -18,10 +19,30 @@ public class UpdateUser {
 		
 		Faker faker=new Faker();
 		JSONObject data=new JSONObject();
-		data.put("name", faker.name().fullName());
-		data.put("gender", "Male");
-		data.put("email", faker.internet().emailAddress());
-		data.put("status", "active");
+		try {
+			data.put("name", faker.name().fullName());
+		} catch (JSONException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		try {
+			data.put("gender", "Male");
+		} catch (JSONException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		try {
+			data.put("email", faker.internet().emailAddress());
+		} catch (JSONException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		try {
+			data.put("status", "active");
+		} catch (JSONException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		
 		int id=(Integer) context.getSuite().getAttribute("user_id");
 		String bearerToken="c02c8f07f231e809e55de627a3689d280ec66535cff354042fd4e0d666e61624";
